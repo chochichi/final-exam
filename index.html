@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoleVibe | 頂級科技運動鞋與潮流配件電商網站</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="SoleVibe 結合極致避震科技與潮流美學，為您帶來最頂級的日常休閒鞋、專業慢跑鞋、實戰籃球鞋與高品質鞋類保養配件。首創一體編織技術與 Evo-Foam 緩震底，開啟全新的輕盈腳感革命。">
+  <meta name="keywords" content="運動鞋, 慢跑鞋, 籃球鞋, 休閒鞋, 小白鞋, 德訓鞋, 潮流配件, 洗鞋組, 防水鞋套, 電商網站, SoleVibe">
+  <meta name="author" content="SoleVibe Team">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags (Social Media SEO) -->
+  <meta property="og:title" content="SoleVibe | 頂級科技運動鞋與潮流配件品牌">
+  <meta property="og:description" content="結合極致避震科技與潮流美學，探索 SoleVibe 全新的休閒、慢跑與實戰籃球鞋系列，享受雲感般的舒適行走感受。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.solevibe-premium.com/">
+  <meta property="og:image" content="assets/images/logo.svg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header>
+    <div class="header-container">
+      <!-- Logo -->
+      <a href="#/" class="logo-link">
+        <img src="assets/images/logo.svg" alt="SoleVibe Logo" class="logo-img">
+        <span>SOLE<span style="color: var(--accent-light)">VIBE</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#/" class="active" id="nav-home">首頁</a></li>
+          <li><a href="#/about" id="nav-about">公司簡介</a></li>
+          <li><a href="#/category/casual" id="nav-casual">休閒鞋</a></li>
+          <li><a href="#/category/running" id="nav-running">慢跑鞋</a></li>
+          <li><a href="#/category/basketball" id="nav-basketball">籃球鞋</a></li>
+          <li><a href="#/category/accessories" id="nav-accessories">配件</a></li>
+          <li><a href="#/category/others" id="nav-others">其它類</a></li>
+          <li><a href="#/contact" id="nav-contact">聯絡我們</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button type="button" class="nav-btn" id="theme-toggle-btn" aria-label="切換深淺主題" title="切換主題">
+          <!-- SVG Icon will be loaded dynamically by app.js -->
+        </button>
+
+        <!-- Cart Toggle -->
+        <button type="button" class="nav-btn" id="cart-btn" aria-label="查看購物車" title="購物車">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="8" cy="21" r="1"></circle>
+            <circle cx="19" cy="21" r="1"></circle>
+            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+          </svg>
+          <span class="cart-count" style="display: none;">0</span>
+        </button>
+
+        <!-- Hamburger Menu Toggle (Mobile Only) -->
+        <button type="button" class="nav-btn menu-toggle" id="menu-toggle" aria-label="開啟選單" title="開啟選單">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN APP CONTAINER -->
+  <main id="app">
+    <!-- Dynamic Content Injected here by app.js -->
+    <div style="display: flex; justify-content: center; align-items: center; min-height: 50vh;">
+      <div style="text-align: center;">
+        <h2 style="font-weight: 700; margin-bottom: 1rem;">正在載入 SoleVibe 奢華體驗...</h2>
+        <p style="color: var(--text-secondary);">請稍候，我們正在為您準備最高品質的鞋款展示空間。</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- CART SIDE DRAWER -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay">
+    <div class="cart-drawer" id="cart-drawer">
+      <div class="cart-header">
+        <h3>您的購物袋</h3>
+        <button type="button" class="cart-close-btn" id="cart-close-btn" aria-label="關閉購物車">✕</button>
+      </div>
+      
+      <!-- Cart Items list -->
+      <div class="cart-items-container" id="cart-items">
+        <!-- Rendered by app.js -->
+      </div>
+      
+      <!-- Cart Footer / Checkout -->
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span>小計金額</span>
+          <span class="cart-total-price" id="cart-total-price">NT$ 0</span>
+        </div>
+        <button type="button" class="btn btn-primary checkout-btn" onclick="alert('感謝您的模擬購買！我們將在正式上線後提供真實付款結帳服務。')">
+          前往結帳流程
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- GLOBAL NOTIFICATION MODAL -->
+  <div class="modal-overlay" id="global-modal-overlay">
+    <div class="modal-content-card">
+      <span class="modal-success-icon">✓</span>
+      <h3 id="modal-title">操作成功</h3>
+      <p id="modal-text">您所諮詢的資訊已順利記錄，我們將竭誠為您服務。</p>
+      <button type="button" class="btn btn-primary" onclick="closeGlobalModal()" style="min-width: 120px;">確認</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <!-- Brand column -->
+      <div class="footer-brand">
+        <h3>SOLE<span style="color: var(--accent-light)">VIBE</span></h3>
+        <p>SoleVibe 以極簡美學與先進運動科技，重塑現代履歷體驗。致力於給您的雙腳帶來雲朵般的溫柔包裹與頂級避震支撐。</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+          <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+          <a href="#" class="social-icon" aria-label="Threads">TH</a>
+        </div>
+      </div>
+
+      <!-- Categories column -->
+      <div class="footer-col">
+        <h4>系列鞋款</h4>
+        <ul>
+          <li><a href="#/category/casual">日常休閒鞋</a></li>
+          <li><a href="#/category/running">專業避震慢跑鞋</a></li>
+          <li><a href="#/category/basketball">實戰保護籃球鞋</a></li>
+        </ul>
+      </div>
+
+      <!-- Support column -->
+      <div class="footer-col">
+        <h4>潮流配件與其它</h4>
+        <ul>
+          <li><a href="#/category/accessories">運動配件 / 鞋帶組</a></li>
+          <li><a href="#/category/others">防潑水矽膠鞋套</a></li>
+          <li><a href="#/category/others">運動恢復恢復拖鞋</a></li>
+        </ul>
+      </div>
+
+      <!-- Brand Info column -->
+      <div class="footer-col">
+        <h4>客戶支援</h4>
+        <ul>
+          <li><a href="#/about">關於我們</a></li>
+          <li><a href="#/contact">聯絡我們 / 常見問題</a></li>
+          <li><a href="#/contact">信義旗艦店資訊</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 SoleVibe Premium Corp. 版權所有。本網站所有內容僅供展示與作品集使用。</p>
+      <p style="color: var(--text-muted);">設計與開發：Antigravity Coding Assistant</p>
+    </div>
+  </footer>
+
+  <!-- Javascript Controllers -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

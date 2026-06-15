@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="200" height="200" rx="40" fill="url(#logoGrad)" />
+  <circle cx="100" cy="90" r="50" fill="none" stroke="url(#accentGrad)" stroke-width="2" stroke-dasharray="6 4" opacity="0.6"/>
+  <g transform="translate(10, 0)">
+    <path d="M 60,85 C 45,70 50,55 75,55 C 70,68 75,78 90,80" fill="none" stroke="url(#accentGrad)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 50,95 C 35,80 40,65 65,65 C 60,78 65,88 80,90" fill="none" stroke="url(#accentGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 85,80 C 95,75 105,75 115,85 C 120,90 135,93 145,95 C 150,96 153,99 150,103 C 145,108 130,110 110,110 C 95,110 88,105 85,95 Z" fill="url(#accentGrad)" filter="url(#glow)"/>
+    <path d="M 88,113 L 145,113 C 148,113 148,115 145,116 L 90,116 C 87,116 87,113 88,113 Z" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <text x="100" y="165" font-family="'Outfit', 'Inter', sans-serif" font-weight="900" font-size="20" fill="#ffffff" letter-spacing="3" text-anchor="middle">SOLE<tspan fill="#38bdf8">VIBE</tspan></text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f051d" />
+      <stop offset="100%" stop-color="#18181b" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="6" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  <rect width="400" height="300" rx="24" fill="url(#bgGrad)" />
+  <g filter="url(#shadow)" transform="translate(20, 20)">
+    <ellipse cx="180" cy="225" rx="120" ry="10" fill="#000000" opacity="0.3" filter="blur(4px)" />
+    <path d="M 80,185 C 70,140 90,110 120,105 C 150,100 240,95 285,115 C 305,125 310,145 300,165 C 290,180 260,195 220,195 C 170,195 100,200 80,185 Z" fill="#18181b"/>
+    <path d="M 110,125 Q 115,145 110,165" stroke="#ffffff" stroke-width="2" opacity="0.1" fill="none"/>
+    <path d="M 130,120 Q 135,145 130,170" stroke="#ffffff" stroke-width="2" opacity="0.1" fill="none"/>
+    <path d="M 150,118 Q 155,145 150,172" stroke="#ffffff" stroke-width="2" opacity="0.1" fill="none"/>
+    <path d="M 170,118 Q 175,145 170,172" stroke="#ffffff" stroke-width="2" opacity="0.1" fill="none"/>
+    <path d="M 180,105 C 185,85 240,85 255,115 C 260,125 260,165 245,182 C 235,160 230,125 180,105 Z" fill="#27272a"/>
+    <circle cx="220" cy="115" r="12" fill="#a855f7"/>
+    <path d="M 215,115 H 225 M 220,110 V 120" stroke="#ffffff" stroke-width="2"/>
+  </g>
+</svg>
